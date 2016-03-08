@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oz8-tl-dSX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o1r-3W-n8j"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWc-nQ-RFb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geP-pC-I7g">
+                                <rect key="frame" x="130" y="269" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="推荐应用"/>
+                                <connections>
+                                    <action selector="recommendProductsBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otw-it-hPM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="geP-pC-I7g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N0S-3Q-s2N"/>
+                            <constraint firstItem="geP-pC-I7g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rya-5X-8gC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yoZ-BI-O4o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502.93333333333334" y="79.519999999999996"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lZW-HQ-hfr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oz8-tl-dSX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wgo-PD-aFw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rg3-Rd-n4h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sla-Zd-iiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.86666666666666" y="79.519999999999996"/>
+        </scene>
+    </scenes>
+</document>
